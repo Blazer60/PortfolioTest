@@ -1,0 +1,68 @@
+/*
+Main css class for the website
+Created By: Ryan Purse
+Date: 13/10/2020
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h1.white, p.white {
+    color: white;
+}
+
+header {
+    overflow: hidden;
+    position: fixed;
+    background: white;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.banner {
+    background: url("../images/ArtOfRallyBanner.jpg") no-repeat left;
+    margin: 0;
+    padding: 4rem 4rem 4rem 8rem;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+
+div.bannerBox {
+    width: 25rem;
+}
+
+.debug {
+    border-color: darkred;
+    border-width: 1px;
+    border-style: solid;
+}
+
+div.column50 {
+    float: left;
+    width: 50%;
+}
+
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column50 {
+        width: 100%;
+    }
+}
