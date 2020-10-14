@@ -12,7 +12,7 @@ h1 {
     font-size: 32pt;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
     color: whitesmoke;
 }
 
@@ -28,6 +28,11 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+span.header {
+    width: 400px;
+    text-align: justify;
 }
 
 body {
