@@ -63,19 +63,20 @@ a:active.header {
     background-color: var(--secondary-colour);
 }
 
+div.pseudo-header {
+    min-height: 1px;
+    width: 100vw;
+}
+
 header {
     position: fixed;
     background: var(--main-bg-colour);
     opacity: 0.9;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
     height: fit-content;
-}
-
-span.header {
-    width: 400px;
-    text-align: justify;
+    padding: 0.5rem 0;
 }
 
 body {

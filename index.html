@@ -5,8 +5,8 @@
     <title>index</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="debug">
-    <header class="">
+<body onresize="setPseudoHeaderHeight()">
+    <header id="header">
         <div class="column_side">
         </div>
         <nav class="header">
@@ -17,6 +17,9 @@
             <a href="#" class="header">Template</a>
         </nav>
     </header>
+    <div class="pseudo-header" id="pseudoHeader">
+
+    </div>
     <div class="banner">
         <div class="debug bannerBox">
             <h1 class="black">Warhammer 40,000</h1>
@@ -68,5 +71,7 @@
     <footer class="debug">
         <h3>Footer Div</h3>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
