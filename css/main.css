@@ -8,8 +8,11 @@ Date: 13/10/2020
     --main-bg-colour: #111111;
     --main-font-colour: #f5f5f5; /* Whitesmoke */
     --primary-colour: #2e0e77;
+    --primary-fade-colour: #6d49b7ff;
     --secondary-colour: pass;
     --ternary-colour: pass;
+
+    --transition-delta: 300ms;
 }
 
 * {
@@ -33,14 +36,38 @@ h1.black, h2.black, h3.black, h4.black, h5.black, h6.black, p.black {
     color: black;
 }
 
+nav.header {
+    background-color: var(--primary-colour);
+    width: fit-content;
+    padding: 0 1rem;
+    float: left;
+}
+
+a.header {
+    font-weight: bold;
+    font-size: 17pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-colour);
+    display: inline-block;
+    min-width: 8rem;
+    transition-duration: var(--transition-delta);
+}
+
+a:hover.header {
+    background-color: var(--primary-fade-colour);
+    transition-duration: var(--transition-delta);
+}
+
 header {
-    overflow: hidden;
     position: fixed;
     background: var(--main-bg-colour);
     opacity: 0.9;
     top: 0;
     width: 100%;
     z-index: 100;
+    height: fit-content;
 }
 
 span.header {
