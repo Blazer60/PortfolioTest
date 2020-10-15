@@ -5,7 +5,9 @@
     <title>index</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body onresize="setPseudoHeaderHeight()">
+    <!-- Header Nav Bar -->
     <header id="header">
         <div class="column_side">
         </div>
@@ -18,9 +20,11 @@
             <a href="#" class="header">Template</a>
         </nav>
     </header>
-    <div class="pseudo-header" id="pseudoHeader">
 
-    </div>
+    <!-- Pseudo Header used to off-set the page to fit the fixed header -->
+    <div class="pseudo-header" id="pseudoHeader"></div>
+
+    <!-- Full Screen Embedded Banner with overlaying text -->
     <div class="banner">
         <div class="debug bannerBox">
             <h1 class="black">Warhammer 40,000</h1>
@@ -29,6 +33,10 @@
         </div>
     </div>
 
+    <!--
+        50/50 Row Div test layout
+        May changed to include "flank div" to allow ease of reading on smaller devices
+     -->
     <div class="debug row">
         <div class="debug column50">
             <h1>Left Box</h1>
@@ -39,6 +47,10 @@
         </div>
     </div>
 
+    <!--
+        Main section with dual "flank" off-set
+        "Right Flank Div may be completely useless"
+    -->
     <div class="row">
         <div class="debug column_side">
             <h3>left flank</h3>
@@ -54,6 +66,9 @@
         </div>
     </div>
 
+    <!--
+        Another test section. Only uses a left flank
+    -->
     <div class="row">
         <div class="debug column_side">
             <h3>Left Flank</h3>
@@ -64,15 +79,23 @@
         </div>
     </div>
 
+    <!--
+        Margin style body section.
+        It has limited options for resizing the div for different devices
+    -->
     <div class="debug margin">
         <h1>Margin Style Box</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna a lorem maximus hendrerit. Duis venenatis augue eu nibh dignissim pulvinar. Pellentesque gravida nisl a massa elementum molestie. Cras placerat, orci a suscipit rhoncus, lorem orci tincidunt massa, a laoreet erat tellus eget ligula. Praesent auctor vehicula dolor, quis congue lectus dapibus quis. Suspendisse sit amet purus id sapien dictum viverra et eget massa. Maecenas eu lacus bibendum, laoreet lacus vel, suscipit eros. Praesent tempus ipsum mattis, tristique lorem in, fringilla justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna a lorem maximus hendrerit. Duis venenatis augue eu nibh dignissim pulvinar. Pellentesque gravida nisl a massa elementum molestie. Cras placerat, orci a suscipit rhoncus, lorem orci tincidunt massa, a laoreet erat tellus eget ligula. Praesent auctor vehicula dolor, quis congue lectus dapibus quis. Suspendisse sit amet purus id sapien dictum viverra et eget massa. Maecenas eu lacus bibendum, laoreet lacus vel, suscipit eros. Praesent tempus ipsum mattis, tristique lorem in, fringilla justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna a lorem maximus hendrerit. Duis venenatis augue eu nibh dignissim pulvinar. Pellentesque gravida nisl a massa elementum molestie. Cras placerat, orci a suscipit rhoncus, lorem orci tincidunt massa, a laoreet erat tellus eget ligula. Praesent auctor vehicula dolor, quis congue lectus dapibus quis. Suspendisse sit amet purus id sapien dictum viverra et eget massa. Maecenas eu lacus bibendum, laoreet lacus vel, suscipit eros. Praesent tempus ipsum mattis, tristique lorem in, fringilla justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna a lorem maximus hendrerit. Duis venenatis augue eu nibh dignissim pulvinar. Pellentesque gravida nisl a massa elementum molestie. Cras placerat, orci a suscipit rhoncus, lorem orci tincidunt massa, a laoreet erat tellus eget ligula. Praesent auctor vehicula dolor, quis congue lectus dapibus quis. Suspendisse sit amet purus id sapien dictum viverra et eget massa. Maecenas eu lacus bibendum, laoreet lacus vel, suscipit eros. Praesent tempus ipsum mattis, tristique lorem in, fringilla justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna a lorem maximus hendrerit. Duis venenatis augue eu</p>
     </div>
 
+    <!-- Gallery -->
+
+    <!-- Footer: Not implemented -->
     <footer class="debug">
         <h3>Footer Div</h3>
     </footer>
 
+    <!-- Main JS that is applied to all pages -->
     <script src="js/main.js"></script>
 </body>
 </html>
