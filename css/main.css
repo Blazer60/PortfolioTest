@@ -4,6 +4,14 @@ Created By: Ryan Purse
 Date: 13/10/2020
  */
 
+:root {
+    --main-bg-colour: #111111;
+    --main-font-colour: #f5f5f5; /* Whitesmoke */
+    --primary-colour: #2e0e77;
+    --secondary-colour: pass;
+    --ternary-colour: pass;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -12,8 +20,13 @@ h1 {
     font-size: 32pt;
 }
 
+p {
+    font-size: 17pt;
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
-    color: whitesmoke;
+    color: var(--main-font-colour);
+    font-family: sans-serif;
 }
 
 h1.black, h2.black, h3.black, h4.black, h5.black, h6.black, p.black {
@@ -23,7 +36,7 @@ h1.black, h2.black, h3.black, h4.black, h5.black, h6.black, p.black {
 header {
     overflow: hidden;
     position: fixed;
-    background: #303030;
+    background: var(--main-bg-colour);
     opacity: 0.9;
     top: 0;
     width: 100%;
@@ -38,7 +51,7 @@ span.header {
 body {
     margin: 0;
     padding: 0;
-    background: #303030;
+    background: var(--main-bg-colour);
 }
 
 div.banner {
@@ -90,7 +103,7 @@ div.row:after {
 }
 
 hr.purple {
-    border-color: #2e0e77;
+    border-color: var(--primary-colour);
     width: 20rem;
     margin: 0;
 }
