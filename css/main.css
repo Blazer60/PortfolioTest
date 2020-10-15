@@ -13,6 +13,8 @@ Date: 13/10/2020
     --ternary-colour: pass;
 
     --transition-delta: 300ms;
+
+    --gallery-image-size: 500px;
 }
 
 * {
@@ -85,6 +87,11 @@ body {
     background: var(--main-bg-colour);
 }
 
+img.gallery {
+    height: var(--gallery-image-size);
+    width: var(--gallery-image-size);
+}
+
 div.profile_image {
     --image-size: 5rem;
     background: url("../images/guardsmen.jpg") no-repeat center center;
@@ -138,6 +145,18 @@ div.column_side {
     float: left;
     width: 15%;
     min-height: 1px;
+}
+
+div.gallery_center {
+    margin: auto;
+}
+
+div.gallery {
+    float: left;
+    display: inline-block;
+    min-width: var(--gallery-image-size);
+    min-height: var(--gallery-image-size);
+    padding: 0;
 }
 
 div.row:after {
