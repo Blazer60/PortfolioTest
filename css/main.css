@@ -9,7 +9,7 @@ Date: 13/10/2020
     --main-font-colour: #f5f5f5; /* Whitesmoke */
     --primary-colour: #2e0e77;
     --primary-fade-colour: #6d49b7ff;
-    --secondary-colour: pass;
+    --secondary-colour: #f1cc0dff;
     --ternary-colour: pass;
 
     --transition-delta: 300ms;
@@ -37,7 +37,6 @@ h1.black, h2.black, h3.black, h4.black, h5.black, h6.black, p.black {
 }
 
 nav.header {
-    background-color: var(--primary-colour);
     width: fit-content;
     padding: 0 1rem;
     float: left;
@@ -49,15 +48,19 @@ a.header {
     text-align: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: var(--primary-colour);
     display: inline-block;
     min-width: 8rem;
-    transition-duration: var(--transition-delta);
+    border-radius: 2rem;
+    /*transition-duration: var(--transition-delta);*/
 }
 
 a:hover.header {
-    background-color: var(--primary-fade-colour);
+    background-color: var(--primary-colour);
     transition-duration: var(--transition-delta);
+}
+
+a:active.header {
+    background-color: var(--secondary-colour);
 }
 
 header {
@@ -121,6 +124,7 @@ div.column_main {
 div.column_side {
     float: left;
     width: 15%;
+    min-height: 1px;
 }
 
 div.row:after {
