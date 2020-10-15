@@ -38,7 +38,7 @@ h1.black, h2.black, h3.black, h4.black, h5.black, h6.black, p.black {
 
 nav.header {
     width: fit-content;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     float: left;
 }
 
@@ -76,13 +76,25 @@ header {
     width: 100vw;
     z-index: 100;
     height: fit-content;
-    padding: 0.5rem 0;
+    padding: 0 0;
 }
 
 body {
     margin: 0;
     padding: 0;
     background: var(--main-bg-colour);
+}
+
+div.profile_image {
+    --image-size: 5rem;
+    background: url("../images/guardsmen.jpg") no-repeat center center;
+    background-size: var(--image-size) var(--image-size);
+    min-width: var(--image-size);
+    min-height: var(--image-size);
+    float: left;
+    border-width: 1px;
+    border-color: var(--primary-colour);
+    border-style: solid;
 }
 
 div.banner {
