@@ -1,0 +1,21 @@
+/*
+Flexbox CSS used to create flexbox items
+Created By: Ryan Purse
+Date: 16/10/2020
+ */
+
+/* Flexbox wrapper class */
+div.flex_column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+}
+
+div.flex_row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
