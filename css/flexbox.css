@@ -1,0 +1,76 @@
+/*
+ * Flexbox Example work
+ * Created By: Ryan Purse
+ * Created On: 17/10/2020
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-colour: whitesmoke;
+    --black: black;
+    --white: whitesmoke;
+    --gray: #c9c9c9;
+}
+
+.debug {
+    border: darkred 1px solid;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-colour);
+    font-family: sans-serif;
+}
+
+header {
+    background: var(--gray);
+    width: 100vw;
+    opacity: 0.9;
+    z-index: 100;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+    font-family: sans-serif;
+    color: var(--black);
+}
+
+a {
+    display: inline-block;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 17pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    min-width: 8rem;
+}
+
+a:hover {
+
+}
+
+nav {
+    width: 70vw;
+    text-align: right;
+}
+
+div {
+
+}
+
+div.row {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+div.center {
+    align-content: center;
+    justify-content: center;
+}
+
