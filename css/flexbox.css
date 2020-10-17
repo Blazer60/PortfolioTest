@@ -13,14 +13,27 @@
     --black: black;
     --white: whitesmoke;
     --gray: #c9c9c9;
+
+    --skobeloff: #006466;
+    --midnight-green: #065A60;
+    --eagle-green: #0B525B;
+    --charcoal: #1B3A4B;
+    --prusian-blue: #212F45;
+    --space-cadet: #272640;
+    --dark-purple: #312244;
+    --russian-violet: #3E1F47;
+    --light-violet: #4D194D;
 }
 
 .debug {
     border: darkred 1px solid;
+    min-width: 10rem;
+    min-height: 1rem;
 }
 
 body {
     display: flex;
+    flex-flow: column nowrap;
     margin: 0;
     padding: 0;
     background-color: var(--background-colour);
@@ -34,9 +47,9 @@ header {
     z-index: 100;
 }
 
-h1 h2 h3 h4 h5 h6 p {
+h1, h2, h3, h4, h5, p{
     font-family: sans-serif;
-    color: var(--black);
+    color: whitesmoke;
 }
 
 a {
@@ -60,13 +73,17 @@ nav {
 }
 
 div {
-
+    flex-grow: 1;
 }
 
 div.row {
     display: flex;
     flex-flow: row wrap;
+}
 
+div.column {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 div.center {
