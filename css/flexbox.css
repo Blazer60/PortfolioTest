@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5, p{
     color: whitesmoke;
 }
 
+.black {
+    color: var(--black);
+}
+
 p {
     max-width: content-box;
 }
@@ -91,7 +95,18 @@ div.column {
 }
 
 div.center {
-    align-content: center;
     justify-content: center;
+}
+
+div.right {
+    justify-content: flex-end;
+}
+
+div.middle {
+    align-content: center;
+}
+
+div.bottom {
+    align-content: flex-end;
 }
 
