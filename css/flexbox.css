@@ -56,10 +56,6 @@ h1, h2, h3, h4, h5, p{
     color: var(--black);
 }
 
-p {
-    max-width: content-box;
-}
-
 a {
     display: inline-block;
     color: var(--black);
@@ -87,11 +83,13 @@ div {
 div.row {
     display: flex;
     flex-flow: row wrap;
+    flex-basis: 0;
 }
 
 div.column {
     display: flex;
     flex-flow: column nowrap;
+    flex-basis: 0;
 }
 
 div.center {
@@ -112,7 +110,9 @@ div.bottom {
 
 div.text-wrapper {
     flex-flow: column wrap;
+    flex-grow: 0;
     max-width: 31rem;  /* ~500px */
+    width: fit-content;
     padding: 0.5rem 1rem;
 }
 

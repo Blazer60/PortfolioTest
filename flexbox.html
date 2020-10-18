@@ -11,18 +11,19 @@
     <!-- Body -->
 
     <!-- Creating a complex layout using flexbox -->
-    <div class="row" style="height: 80vh;">
+    <div class="row" style="min-height: 80vh;">
         <div class="column" style="background-color: var(--dark-purple)">
 
         </div>
         <div class="column" style="background-color: var(--midnight-green);">
-            <div class="text-wrapper">
+            <div class="text-wrapper" style="margin-top: 10vh">
                 <h1>Hello.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             </div>
         </div>
         <div class="column" style="flex-grow: 3">
             <div class="column" style="background-color: var(--dark-purple); flex-grow: 3">
+
             </div>
             <div class="row">
                 <div class="" style="background-color: var(--russian-violet)">
@@ -66,6 +67,48 @@
 
         </div>
         <div class="column" style="background-color: var(--light-violet)">
+
+        </div>
+    </div>
+
+    <!-- Aligning same size divs, some with h1, some have none -->
+    <!-- Debug Row -->
+    <div class="row" style="min-height: 10vh">
+        <div class="row" style="background-color: var(--skobeloff)">
+
+        </div>
+        <div class="row" style="background-color: var(--midnight-green)">
+
+        </div>
+        <div class="row" style="background-color: var(--eagle-green)">
+
+        </div>
+        <div class="row" style="background-color: var(--charcoal)">
+
+        </div>
+        <div class="row" style="background-color: var(--prusian-blue)">
+
+        </div>
+    </div>
+    <!-- Test Row -->
+    <div class="row" style="min-height: 10vh">
+        <div class="row" style="background-color: var(--skobeloff);">
+            <div class="text-wrapper">
+                <p>Has text wrapper</p>
+            </div>
+        </div>
+        <div class="row" style="background-color: var(--midnight-green);">
+
+        </div>
+        <div class="row" style="background-color: var(--eagle-green);">
+            <div>
+                <h1>3</h1>
+            </div>
+        </div>
+        <div class="row" style="background-color: var(--charcoal);">
+
+        </div>
+            <div class="row" style="background-color: var(--prusian-blue);">
 
         </div>
     </div>
