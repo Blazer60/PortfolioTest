@@ -110,3 +110,9 @@ div.bottom {
     align-content: flex-end;
 }
 
+div.text-wrapper {
+    flex-flow: column wrap;
+    max-width: 31rem;  /* ~500px */
+    padding: 0.5rem 1rem;
+}
+

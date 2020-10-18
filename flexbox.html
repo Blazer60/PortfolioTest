@@ -11,13 +11,15 @@
     <!-- Body -->
 
     <!-- Creating a complex layout using flexbox -->
-    <div class="row" style="height: 80vh; opacity: 0.90;">
+    <div class="row" style="height: 80vh;">
         <div class="column" style="background-color: var(--dark-purple)">
 
         </div>
-        <div class="column" style="background-color: var(--midnight-green); padding: 10vh 1rem; max-width: 20vw">
-            <h1>Hello.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="column" style="background-color: var(--midnight-green);">
+            <div class="text-wrapper">
+                <h1>Hello.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
         </div>
         <div class="column" style="flex-grow: 3">
             <div class="column" style="background-color: var(--dark-purple); flex-grow: 3">
@@ -37,12 +39,42 @@
     </div>
 
     <!-- Positioning Divs within Divs -->
-    <div class="debug right middle row" style="min-height: 80vh">
-        <div class="debug" style="max-height: 10vh; max-width: 20vw">
-            <h1 class="black">1</h1>
+    <div class="row" style="min-height: 90vh">
+        <div class="column" style="flex-grow: 3;">
+            <div class="right row" style="background-color: var(--prusian-blue)">
+                <div class="text-wrapper">
+                    <h2>Don't Shift the box.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+            </div>
+            <div class="middle center row" style="background-color: var(--space-cadet)">
+                <div class="text-wrapper">
+                    <h2>Settle in the middle.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+            </div>
+            <div class="bottom row" style="background-color: var(--dark-purple)">
+                <div class="text-wrapper">
+                    <h2>Low-fi Hip hop to study and listen to.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column" style="background-color: var(--midnight-green)">
+
+        </div>
+        <div class="column" style="background-color: var(--light-violet)">
+
         </div>
     </div>
 
+
+    <!-- White Spacer -->
+    <div class="column" style="min-height: 60vh">
+
+    </div>
 
     <!-- End Body -->
 
