@@ -9,11 +9,13 @@
 }
 
 :root {
+    /* Base Colours */
     --background-colour: whitesmoke;
     --black: black;
     --white: whitesmoke;
     --gray: #c9c9c9;
 
+    /* Site Colour Scheme */
     --skobeloff: #006466;
     --midnight-green: #065A60;
     --eagle-green: #0B525B;
@@ -24,16 +26,29 @@
     --russian-violet: #3E1F47;
     --light-violet: #4D194D;
 
+    /*
+     * Site Colour Scheme with applied alpha
+     * Only use with fixed elements.
+     */
     --dark-purple-alpha: rgba(49, 34, 68, 0.8);
     --midnight-green-alpha: rgba(6, 90, 96, 0.8);
 
+    /* Default variables */
     --gallery-size: 400px;
 }
 
+/*
+ * Use to find out where an element has been placed
+ * Put at the start so that overriding works properly
+ */
 .debug {
     border: darkred 1px solid;
     min-width: 10rem;
     min-height: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -51,7 +66,7 @@ body {
     font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p {
     font-family: sans-serif;
     color: whitesmoke;
 }
@@ -60,10 +75,6 @@ h1.down {
     writing-mode: vertical-lr;
     font-weight: bold;
     font-size: 32pt;
-}
-
-.black {
-    color: var(--black);
 }
 
 a {
@@ -81,6 +92,14 @@ a:hover {
     background-color: var(--midnight-green-alpha);
 }
 
+a.anchor-link {
+    visibility: hidden;
+    max-width: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
 nav {
     width: 70vw;
     text-align: right;
@@ -93,12 +112,14 @@ div {
 div.row {
     display: flex;
     flex-flow: row wrap;
+    flex: 1;
     flex-basis: 0;
 }
 
 div.column {
     display: flex;
     flex-flow: column nowrap;
+    flex: 1;
     flex-basis: 0;
 }
 
@@ -141,6 +162,11 @@ div.box-shadow {
     z-index: 10;
 }
 
+/*
+ * Right-angle triangles that use the size of the div.
+ * The position describes where the right angle will
+ * be located.
+ */
 div.triangle-top-right {
     clip-path: polygon(100% 0, 100% 100%, 0 0);
 }
@@ -157,12 +183,6 @@ div.triangle-bottom-right {
     clip-path: polygon(100% 100%, 0 100%, 100% 0);
 }
 
-img.gallery {
-    display: flex;
-    image-rendering: high-quality;
-    max-width: var(--gallery-size);
-}
-
 div.image-wrapper {
     margin: 1rem;
     display: flex;
@@ -170,4 +190,14 @@ div.image-wrapper {
     flex-grow: 0;
     flex-basis: 0;
     min-width: fit-content;
+}
+
+img.gallery {
+    display: flex;
+    image-rendering: high-quality;
+    max-width: var(--gallery-size);
+}
+
+.black {
+    color: var(--black);
 }
