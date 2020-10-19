@@ -25,6 +25,7 @@
     --light-violet: #4D194D;
 
     --dark-purple-alpha: rgba(49, 34, 68, 0.8);
+    --midnight-green-alpha: rgba(6, 90, 96, 0.8);
 }
 
 .debug {
@@ -69,12 +70,13 @@ a {
     color: var(--white);
     font-weight: bold;
     font-size: 17pt;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     width: min-content;
+    transition-duration: 200ms;
 }
 
 a:hover {
-
+    background-color: var(--midnight-green-alpha);
 }
 
 nav {
@@ -138,11 +140,9 @@ div.box-shadow {
 }
 
 div.triangle-top-right {
-    background-color: var(--skobeloff);
     clip-path: polygon(100% 0, 100% 100%, 0 0);
 }
 
 div.triangle-bottom-left {
-    background-color: var(--skobeloff);
     clip-path: polygon(0 100%, 100% 100%, 0 0);
 }
