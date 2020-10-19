@@ -52,6 +52,12 @@ h1, h2, h3, h4, h5, p{
     color: whitesmoke;
 }
 
+h1.down {
+    writing-mode: vertical-lr;
+    font-weight: bold;
+    font-size: 32pt;
+}
+
 .black {
     color: var(--black);
 }
@@ -124,9 +130,11 @@ div.box-shadow {
 div.triangle-top-right {
     background-color: var(--skobeloff);
     clip-path: polygon(100% 0, 100% 100%, 0 0);
+    z-index: 10;
 }
 
 div.triangle-bottom-left {
     background-color: var(--skobeloff);
     clip-path: polygon(0 100%, 100% 100%, 0 0);
+    z-index: 10;
 }
