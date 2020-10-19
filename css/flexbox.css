@@ -26,6 +26,8 @@
 
     --dark-purple-alpha: rgba(49, 34, 68, 0.8);
     --midnight-green-alpha: rgba(6, 90, 96, 0.8);
+
+    --gallery-size: 400px;
 }
 
 .debug {
@@ -143,6 +145,29 @@ div.triangle-top-right {
     clip-path: polygon(100% 0, 100% 100%, 0 0);
 }
 
+div.triangle-top-left {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
 div.triangle-bottom-left {
     clip-path: polygon(0 100%, 100% 100%, 0 0);
+}
+
+div.triangle-bottom-right {
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+img.gallery {
+    display: flex;
+    image-rendering: high-quality;
+    max-width: var(--gallery-size);
+}
+
+div.image-wrapper {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 0;
+    flex-basis: 0;
+    min-width: fit-content;
 }
