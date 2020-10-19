@@ -23,6 +23,8 @@
     --dark-purple: #312244;
     --russian-violet: #3E1F47;
     --light-violet: #4D194D;
+
+    --dark-purple-alpha: rgba(49, 34, 68, 0.8);
 }
 
 .debug {
@@ -63,13 +65,12 @@ h1.down {
 
 a {
     display: inline-block;
-    color: var(--black);
+    text-decoration: none;
+    color: var(--white);
     font-weight: bold;
     font-size: 17pt;
-    text-align: center;
-    text-decoration: none;
     padding: 0.5rem 1rem;
-    min-width: 8rem;
+    width: min-content;
 }
 
 a:hover {
@@ -113,12 +114,22 @@ div.bottom {
     align-content: flex-end;
 }
 
+div.justify {
+    justify-content: space-between;
+}
+
 div.text-wrapper {
     flex-flow: column wrap;
     flex-grow: 0;
     max-width: 31rem;  /* ~500px */
     width: fit-content;
     padding: 0.5rem 1rem;
+}
+
+div.anchor-wrapper {
+    text-align: center;
+    flex-grow: 0;
+    opacity: 1;
 }
 
 div.box-shadow {
