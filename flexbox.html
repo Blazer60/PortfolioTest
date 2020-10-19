@@ -12,27 +12,42 @@
 
     <!-- Creating a complex layout using flexbox -->
     <div class="row" style="min-height: 80vh;">
-        <div class="column" style="background-color: var(--dark-purple)">
+        <!-- Two left strips Section -->
+        <div class="row" style="flex-grow: 2">
+            <div class="column" style="background-color: var(--dark-purple)">
 
-        </div>
-        <div class="column" style="background-color: var(--midnight-green);">
-            <div class="text-wrapper" style="margin-top: 10vh">
-                <h1>Hello.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="column" style="background-color: var(--midnight-green);">
+                <div class="column" style="flex-grow: 3">
+                    <div class="text-wrapper" style="margin-top: 10vh">
+                        <h1>Hello.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+
+                <div class="column" style="background-color: var(--dark-purple)">
+                    <div class="triangle-top-right">
+
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Box with tri-colours at the bottom -->
         <div class="column" style="flex-grow: 3">
             <div class="column" style="background-color: var(--dark-purple); flex-grow: 3">
 
             </div>
             <div class="row">
-                <div class="" style="background-color: var(--midnight-green);">
+                <div class="row" style="background-color: var(--skobeloff);">
 
                 </div>
-                <div class="" style="background-color: var(--midnight-green)">
+                <div class="row" style="background-color: var(--dark-purple)">
+                    <div class="triangle-bottom-left">
 
+                    </div>
                 </div>
-                <div class="" style="background-color: var(--dark-purple)">
+                <div class="row" style="background-color: var(--dark-purple)">
 
                 </div>
             </div>
@@ -57,7 +72,7 @@
             </div>
             <div class="bottom row" style="background-color: var(--dark-purple)">
                 <div class="text-wrapper">
-                    <h2>Low-fi Hip hop to study and listen to.</h2>
+                    <h2>Low-fi hip hop to relax/study to.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ullamcorper quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 </div>
             </div>
@@ -72,7 +87,7 @@
     </div>
 
     <!-- Green Row -->
-    <div class="bottom right row" style="background-color: var(--midnight-green); min-height: 20vh">
+    <div class="bottom right row" style="background-color: var(--skobeloff); min-height: 20vh">
         <div class="text-wrapper">
             <p>By Ryan Purse</p>
         </div>

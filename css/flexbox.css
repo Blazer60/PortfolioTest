@@ -121,3 +121,16 @@ div.box-shadow {
     z-index: 10;
 }
 
+div.triangle-top-right {
+    width: 0;
+    height: 0;
+    border-top: 20vh solid var(--skobeloff);
+    border-left: 20vw solid transparent;
+}
+
+div.triangle-bottom-left {
+    width: 0;
+    height: 0;
+    border-bottom: 20vh solid var(--skobeloff);
+    border-right: 20vw solid transparent;
+}
