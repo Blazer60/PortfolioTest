@@ -5,7 +5,7 @@
  */
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 :root {
@@ -166,21 +166,23 @@ div.box-shadow {
  * Right-angle triangles that use the size of the div.
  * The position describes where the right angle will
  * be located.
+ * Triangles take up +/- 1px to ensure there is no weird
+ * clipping due to rounding within the browser they are using.
  */
 div.triangle-top-right {
-    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    clip-path: polygon(calc(100% + 1px) -1px, calc(100% + 1px) calc(100% + 1px), -1px -1px);
 }
 
 div.triangle-top-left {
-    clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(-1px calc(100% + 1px), -1px -1px, calc(100% + 1px) -1px);
 }
 
 div.triangle-bottom-left {
-    clip-path: polygon(0 100%, 100% 100%, 0 0);
+    clip-path: polygon(-1px calc(100% + 1px), calc(100% + 1px) calc(100% + 1px), -1px -1px);
 }
 
 div.triangle-bottom-right {
-    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    clip-path: polygon(calc(100% + 1px) calc(100% + 1px), -1px calc(100% + 1px), calc(100% + 1px) -1px);
 }
 
 div.image-wrapper {
