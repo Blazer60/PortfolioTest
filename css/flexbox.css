@@ -203,3 +203,8 @@ img.gallery {
 .black {
     color: var(--black);
 }
+
+svg {
+    min-height: 2rem;
+    min-width: 2rem;
+}
