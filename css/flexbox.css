@@ -43,8 +43,10 @@
  */
 .debug {
     border: darkred 1px solid;
-    min-width: 10rem;
+    /*
+    min-width: 1rem;
     min-height: 1rem;
+    */
 }
 
 html {
@@ -89,7 +91,7 @@ a {
 }
 
 a:hover {
-    background-color: var(--midnight-green-alpha);
+    color: var(--midnight-green-alpha);
 }
 
 a.anchor-link {
@@ -98,6 +100,10 @@ a.anchor-link {
     width: 0;
     padding: 0;
     margin: 0;
+}
+
+a svg {
+    min-width: 2rem;
 }
 
 nav {
@@ -202,9 +208,4 @@ img.gallery {
 
 .black {
     color: var(--black);
-}
-
-svg {
-    min-height: 2rem;
-    min-width: 2rem;
 }
