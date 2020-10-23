@@ -68,6 +68,18 @@ body {
     font-family: sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--dark-purple);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--midnight-green);
+}
+
 h1, h2, h3, h4, h5, p {
     font-family: sans-serif;
     color: whitesmoke;
