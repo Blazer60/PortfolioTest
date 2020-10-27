@@ -69,6 +69,8 @@ def build_page(page):
 
 
 def main():
+    if "build" not in os.listdir():
+        os.mkdir(bld_directory)
     # loop through all pages
     [build_page(page) for page in get_pages()]
 
